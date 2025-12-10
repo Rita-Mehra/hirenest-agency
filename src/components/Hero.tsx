@@ -74,11 +74,11 @@ export function Hero() {
           <div className="flex flex-wrap gap-6 text-white">
             <div className="flex items-center gap-2">
               <Phone className="w-5 h-5" />
-              <span>+91 1800-XXX-XXXX</span>
+              <span><a href="tel:919592923602">+91 95929-23602</a></span>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="w-5 h-5" />
-              <span>info@hirenest.com</span>
+              <a className="text-gray-100" href="mailto:info@hirenest.agency">info@hirenest.agency</a>
             </div>
           </div>
         </div>

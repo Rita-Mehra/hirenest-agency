@@ -70,9 +70,9 @@ export function Countries() {
                   <span>{country.popular}</span>
                 </div>
               )}
-              
+
               <div className="relative h-48 overflow-hidden">
-                <img 
+                <img
                   src={country.image}
                   alt={country.name}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
@@ -95,7 +95,7 @@ export function Countries() {
                 </div>
 
                 <button className="mt-6 w-full px-4 py-3 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition">
-                  Learn More
+                  <a href="tel:919592923602">  Learn More</a>
                 </button>
               </div>
             </div>
@@ -107,7 +107,7 @@ export function Countries() {
           <p className="text-gray-600 mb-6">
             We also provide services for New Zealand, Ireland, Singapore, UAE, and many more destinations
           </p>
-          <button 
+          <button
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             className="px-8 py-3 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition"
           >

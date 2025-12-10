@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Clock, Send } from 'lucide-react';
 
@@ -55,7 +56,7 @@ export function Contact() {
           {/* Contact Information */}
           <div>
             <h3 className="mb-6">Contact Information</h3>
-            
+
             <div className="space-y-6 mb-8">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -63,8 +64,7 @@ export function Contact() {
                 </div>
                 <div>
                   <div className="text-gray-900 mb-1">Phone</div>
-                  <div className="text-gray-600">+91 1800-XXX-XXXX</div>
-                  <div className="text-gray-600">+91 98765-43210</div>
+                  <div className="text-gray-600"><a href="tel:919592923602">+91 95929-23602</a></div>
                 </div>
               </div>
 
@@ -74,8 +74,8 @@ export function Contact() {
                 </div>
                 <div>
                   <div className="text-gray-900 mb-1">Email</div>
-                  <div className="text-gray-600">info@hirenest.com</div>
-                  <div className="text-gray-600">support@hirenest.com</div>
+                  <div className="text-gray-600"><a className="text-gray-100" href="mailto:info@hirenest.agency">info@hirenest.agency</a></div>
+
                 </div>
               </div>
 
@@ -86,9 +86,7 @@ export function Contact() {
                 <div>
                   <div className="text-gray-900 mb-1">Office Address</div>
                   <div className="text-gray-600">
-                    HireNest Consultancy,<br />
-                    123 Business District,<br />
-                    New Delhi - 110001, India
+                    GOLD HOMES, PLOT NO 8 SHOWROOM, <br />Landran Rd, Sector 116, KHARAR, <br />Sahibzada Ajit Singh Nagar, <br />Punjab 140307
                   </div>
                 </div>
               </div>
@@ -104,17 +102,12 @@ export function Contact() {
                 </div>
               </div>
             </div>
-
-            {/* Map Placeholder */}
-            <div className="bg-gray-100 rounded-2xl h-64 flex items-center justify-center">
-              <MapPin className="w-12 h-12 text-gray-400" />
-            </div>
           </div>
 
           {/* Contact Form */}
           <div className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8">
             <h3 className="mb-6">Send us a Message</h3>
-            
+
             {submitted ? (
               <div className="bg-green-50 border-2 border-green-500 rounded-xl p-8 text-center">
                 <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">

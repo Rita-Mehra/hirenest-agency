@@ -1,4 +1,5 @@
-import { Facebook, Twitter, Instagram, Linkedin, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Mail, Phone } from 'lucide-react';
+import logo from '../image/hirenest-logo-png.png';
 
 export function Footer() {
   return (
@@ -8,10 +9,7 @@ export function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span>HN</span>
-              </div>
-              <span>HireNest Agency</span>
+              <img src={logo} alt="HireNest Agency" width="30%" />
             </div>
             <p className="text-gray-400 mb-6">
               Your trusted partner for international education and career opportunities. Building futures, creating success stories.
@@ -21,17 +19,12 @@ export function Footer() {
                 <Facebook className="w-5 h-5" />
               </a>
               <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition">
                 <Instagram className="w-5 h-5" />
               </a>
               <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition">
-                <Youtube className="w-5 h-5" />
-              </a>
+
             </div>
           </div>
 
@@ -66,19 +59,16 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-blue-400 flex-shrink-0 mt-1" />
                 <div>
-                  <div className="text-gray-400">+91 1800-XXX-XXXX</div>
-                  <div className="text-gray-400">+91 98765-43210</div>
+                  <div className="text-gray-400"><a href="tel:919592923602">+91 95929-23602</a></div>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-blue-400 flex-shrink-0 mt-1" />
-                <div className="text-gray-400">info@hirenest.com</div>
+                <div className="text-gray-400"><a className="text-gray-100" href="mailto:info@hirenest.agency">info@hirenest.agency</a></div>
               </li>
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-blue-400 flex-shrink-0 mt-1" />
                 <div className="text-gray-400">
-                  123 Business District,<br />
-                  New Delhi - 110001
+                  GOLD HOMES, PLOT NO 8 SHOWROOM,<br /> Landran Rd, Sector 116, KHARAR, <br />Sahibzada Ajit Singh Nagar, <br />Punjab 140307
                 </div>
               </li>
             </ul>
@@ -89,7 +79,7 @@ export function Footer() {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400">
-              © 2024 HireNest International Consultancy. All rights reserved.
+              © 2025 HireNest International Consultancy. All rights reserved.
             </p>
             <div className="flex gap-6">
               <a href="#" className="text-gray-400 hover:text-white transition">Privacy Policy</a>

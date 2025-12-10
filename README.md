@@ -1,7 +1,7 @@
 
   # International Consultancy Website
 
-  This is a code bundle for International Consultancy Website. The original project is available at https://www.figma.com/design/e3bwoGov3YxcqJ0oni3Dlr/International-Consultancy-Website.
+  This is a code bundle for International Consultancy Website. The original project is available at 
 
   ## Running the code
 
