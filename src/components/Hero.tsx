@@ -10,24 +10,38 @@ export function Hero() {
     <div className="relative min-h-screen flex items-center">
       {/* Background Image */}
       <div
-        className="absolute inset-0 z-0"
+        className="absolute inset-0"
         style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1436491865332-7a61a109cc05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhaXJwbGFuZSUyMHRyYXZlbHxlbnwxfHx8fDE3NjUxMDgzMTN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral)',
+          backgroundImage:
+            'url(https://images.unsplash.com/photo-1436491865332-7a61a109cc05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhaXJwbGFuZSUyMHRyYXZlbHxlbnwxfHx8fDE3NjUxMDgzMTN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/95 to-blue-700/85" />
+        <div
+          style={{
+            background: "linear-gradient(90deg, rgba(15,19,38,0.95), rgba(53,66,141,0.80))",
+            backgroundSize: "200% 200%",
+            animation: "gradientMove 6s ease infinite",
+          }}
+          className="absolute inset-0 z-10 bg-gradient-to-r from-[rgba(15,19,38,0.95)] to-[rgba(53,66,141,0.80)]" />
+        <div
+          className="absolute inset-0"
+          style={{
+            background: "radial-gradient(circle at 30% 50%, rgba(255,255,255,0.15), rgba(255,255,255,0) 70%)",
+            backgroundSize: "200% 200%",
+            animation: "cloudFloat 20s ease-in-out infinite",
+            pointerEvents: "none",
+            mixBlendMode: "screen",
+            filter: "blur(20px)"
+          }}
+        ></div>
       </div>
 
       {/* Navigation */}
       <nav className="absolute top-0 left-0 right-0 z-20 px-6 py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
-            {/* <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-              <span className="text-blue-600">HN</span>
-            </div>
-            <span className="text-white">HireNest Agency</span> */}
             <img src={logo} alt="HireNest Agency" width="25%" />
           </div>
           <div className="hidden md:flex items-center gap-6 text-white">
